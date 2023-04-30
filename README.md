@@ -62,3 +62,21 @@ FCM_SERVER_KEY="xxxxxx"
 6. Obtain server key from the same project that the device fcm token was obtained from. <br>
 - ![Obtain Server Key](images/firebase_server_key.png)
 - ![Sample Sending FCM notification image](images/success_push_notification.png)
+
+## API
+1. Send push notification
+- Endpoint: http://127.0.0.1:8000/api/send-push-notification
+- body :
+```
+{
+    "title": "Martin title",
+    "body": "Smaple body"
+}
+```
+- response: 
+```
+{
+    "success": "Notification send successfully..\n Sample message ID(s): 0:1682844746858367%4eec88254eec8825",
+    "full response is: ": "{\"multicast_id\":5044209530922280824,\"success\":1,\"failure\":0,\"canonical_ids\":0,\"results\":[{\"message_id\":\"0:1682844746858367%4eec88254eec8825\"}]}"
+}
+```

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NotificationController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -18,5 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('sendNotification', [NotificationController::class, 'sendNotification'])->name('send.notification');
+Route::post('send-push-notification', [NotificationController::class, 'sendNotificationAPI']);
 
