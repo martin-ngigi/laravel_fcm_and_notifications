@@ -60,5 +60,5 @@ php artisan make:controller NotificationController
 FCM_SERVER_KEY="xxxxxx"
 ```
 6. Obtain server key from the same project that the device fcm token was obtained from. <br>
-- [Obtain Server Key](images/firebase_server_key.png)
-- [Sample Sending FCM notification image](images/success_push_notification.png)
+- ![Obtain Server Key](images/firebase_server_key.png)
+- ![Sample Sending FCM notification image](images/success_push_notification.png)
